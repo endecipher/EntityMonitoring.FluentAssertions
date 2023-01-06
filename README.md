@@ -1,5 +1,5 @@
 
-# ActivityMonitoring.Assertions
+# EntityMonitoring.FluentAssertions
 
 Capture, Monitor and "Fluently" Assert over Events/Log Messages/Application Activities/Any Collection of ```TData``` Entities.
 
