@@ -1,4 +1,4 @@
-﻿namespace Monitoring.FluentAssertions.Structure
+﻿namespace EntityMonitoring.FluentAssertions.Structure
 {
     internal class ContextQueue<TData> : ActivityQueue<TData>
     {

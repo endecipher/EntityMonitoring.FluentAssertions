@@ -5,17 +5,17 @@
     <Nullable>disable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 
-    <PackageId>Monitoring.FluentAssertions</PackageId>
+    <PackageId>EntityMonitoring.FluentAssertions</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Ayan Choudhury</Authors>
-    <Product>Monitoring.FluentAssertions</Product>
-    <Description>Capture, Monitor and "Fluently" Assert over Events/Logs/Application Activities/Any Collection of Entities using Monitoring.FluentAssertions for .NET</Description>
+    <Product>EntityMonitoring.FluentAssertions</Product>
+    <Description>Capture, Monitor and "Fluently" Assert over Events/Logs/Application Activities/Any Collection of Entities using EntityMonitoring.FluentAssertions for .NET</Description>
     <Copyright>Copyright © Ayan Choudhury 2023</Copyright>
-    <PackageTags>Logs;Activity;Events;Event;FluentAssertions;FluentAssertion;Fluent;Assertion;Monitor;Monitoring;Data Capture;Data Monitoring;Assert;Collection;</PackageTags>
+    <PackageTags>Logs;Activity;Events;Event;FluentAssertions;FluentAssertion;Fluid;Fluent;Assertion;Monitor;EntityMonitoring;Monitoring;Data Capture;Data Monitoring;Assert;Collection;</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>packageIcon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/endecipher/Monitoring.FluentAssertions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/endecipher/EntityMonitoring.FluentAssertions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 

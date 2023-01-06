@@ -1,4 +1,4 @@
-﻿namespace Monitoring.FluentAssertions.Exceptions
+﻿namespace EntityMonitoring.FluentAssertions.Exceptions
 {
     public class MonitorNotStartedException : Exception
     {

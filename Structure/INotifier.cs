@@ -1,4 +1,4 @@
-﻿namespace Monitoring.FluentAssertions.Structure
+﻿namespace EntityMonitoring.FluentAssertions.Structure
 {
     public interface INotifier<TData>
     {

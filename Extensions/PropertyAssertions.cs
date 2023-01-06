@@ -1,7 +1,7 @@
-﻿using FluentAssertions.Execution;
-using Monitoring.FluentAssertions.Structure;
+﻿using EntityMonitoring.FluentAssertions.Structure;
+using FluentAssertions.Execution;
 
-namespace Monitoring.FluentAssertions.Extensions
+namespace EntityMonitoring.FluentAssertions.Extensions
 {
     /// <summary>
     /// PropertyAssertions - where the properties of <see cref="IAssertableQueue{TData}"/> are asserted

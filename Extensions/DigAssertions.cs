@@ -1,7 +1,7 @@
-﻿using FluentAssertions.Execution;
-using Monitoring.FluentAssertions.Structure;
+﻿using EntityMonitoring.FluentAssertions.Structure;
+using FluentAssertions.Execution;
 
-namespace Monitoring.FluentAssertions.Extensions
+namespace EntityMonitoring.FluentAssertions.Extensions
 {
     /// <summary>
     /// DigAssertions - where the <see cref="IAssertableQueue{TData}"/> is enumerated while removing elements from the queue; for assertions

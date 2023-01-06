@@ -1,7 +1,6 @@
-﻿using Monitoring.FluentAssertions.Exceptions;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 
-namespace Monitoring.FluentAssertions.Structure
+namespace EntityMonitoring.FluentAssertions.Structure
 {
     public sealed class ActivityMonitor<TData> : IContextQueueRegistrar<TData>, IActivityMonitor<TData>
     {
@@ -35,7 +34,7 @@ namespace Monitoring.FluentAssertions.Structure
         {
             lock (_lock)
             {
-                if (IsStarted) throw new MonitorAlreadyStartedException();
+                if (IsStarted) throw new Exceptions.MonitorAlreadyStartedException();
 
                 IsStarted = true;
             }
@@ -45,7 +44,7 @@ namespace Monitoring.FluentAssertions.Structure
         {
             lock (_lock)
             {
-                if (!IsStarted) throw new MonitorAlreadyStoppedException();
+                if (!IsStarted) throw new Exceptions.MonitorAlreadyStoppedException();
 
                 IsStarted = false;
             }
@@ -76,7 +75,7 @@ namespace Monitoring.FluentAssertions.Structure
         {
             if (!IsStarted)
             {
-                if (Settings.ThrowExceptionIfMonitorNotStarted) throw new MonitorNotStartedException();
+                if (Settings.ThrowExceptionIfMonitorNotStarted) throw new Exceptions.MonitorNotStartedException();
 
                 return;
             }
@@ -108,7 +107,7 @@ namespace Monitoring.FluentAssertions.Structure
                 return contextQueue;
             }
 
-            throw new QueueIdNotFoundException(contextQueueId);
+            throw new Exceptions.QueueIdNotFoundException(contextQueueId);
         }
 
         public void Register(IAssertableQueue<TData> queue)
@@ -117,7 +116,7 @@ namespace Monitoring.FluentAssertions.Structure
 
             if (maxQueueInstances > 0 && ContextQueues.Count >= maxQueueInstances)
             {
-                throw new ReachedMaximumContextQueueInstancesException();
+                throw new Exceptions.ReachedMaximumContextQueueInstancesException();
             }
 
             var queueId = queue.Id;

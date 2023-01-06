@@ -1,6 +1,4 @@
-﻿using Monitoring.FluentAssertions.Exceptions;
-
-namespace Monitoring.FluentAssertions.Structure
+﻿namespace EntityMonitoring.FluentAssertions.Structure
 {
     internal class Notifier<TData> : INotifier<TData>
     {
@@ -22,7 +20,7 @@ namespace Monitoring.FluentAssertions.Structure
             Awaiter?.WaitOne(timeSpan);
 
             if (!IsConditionMatched && Settings.ThrowExceptionIfNotifierTimeOutElapses)
-                throw new NotifierTimeOutException();
+                throw new Exceptions.NotifierTimeOutException();
 
             return IsConditionMatched;
         }

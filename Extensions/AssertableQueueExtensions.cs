@@ -1,6 +1,6 @@
-﻿using Monitoring.FluentAssertions.Structure;
+﻿using EntityMonitoring.FluentAssertions.Structure;
 
-namespace Monitoring.FluentAssertions.Extensions
+namespace EntityMonitoring.FluentAssertions.Extensions
 {
     public static class AssertableQueueExtensions
     {

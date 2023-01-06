@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace Monitoring.FluentAssertions.Structure
+namespace EntityMonitoring.FluentAssertions.Structure
 {
     internal class ActivityQueue<TData> : IAssertableQueue<TData>, INotifiableQueue<TData>, IDisposable
     {
