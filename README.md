@@ -1,9 +1,11 @@
+<img alt="packageIcon" src="https://github.com/endecipher/EntityMonitoring.FluentAssertions/blob/main/packageIcon.png" width=15% height=15%> 
 
 # EntityMonitoring.FluentAssertions
 
 Capture, Monitor and "Fluently" Assert over Events/Log Messages/Application Activities/Any Collection of ```TData``` Entities.
 
 
+[![NuGet version (EntityMonitoring.FluentAssertions)](https://img.shields.io/nuget/v/EntityMonitoring.FluentAssertions.svg?style=flat-square)](https://www.nuget.org/packages/EntityMonitoring.FluentAssertions/)
 
 
 
